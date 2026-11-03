@@ -1,0 +1,97 @@
+.footer {
+    background: #2E2F42;
+    /* --- ДОДАЙТЕ ЦІ РЯДКИ СЮДИ --- */
+    padding: 100px 0;
+    /* Висота тепер формується лише цим падінгом */
+}
+
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33333;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F4F4FD ;
+/* --- ДОДАЙТЕ ЦІ РЯДКИ СЮДИ --- */
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.logo-web {
+    color: #4D5AE5;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+
+    /* --- ДОДАЙТЕ ЦІ РЯДКИ СЮДИ --- */
+    width: 264px;
+}
+
+/* ================= НОВЫЙ КОД=======================*/
+
+/*Браузер видит это так: «Ага, этот блок имеет класс container и  значит,
+я держу его по центру экрана. Но еще у него 
+есть имя footer-container и значит, только внутри него я выстраиваю
+ левую текстовую коробку и правые соцсети в одну строчку флексами» .*/
+.footer-container {
+    display: flex;
+    align-items: flex-start;/*бере обидві «коробки» повністю і притискає їхні найверхніші межі до верхнього краю футера.*/
+}
+
+/* Создаем отступ между левым блоком (текст) и правым (соцсети) */
+.footer-left {
+    margin-right: 120px;
+}
+
+.footer-socials-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+    /* Дистанция 16px вниз до круглых кнопок */
+}
+
+.footer-socials-list {
+    display: flex;
+    gap: 16px;
+    /* Расстояние между самими синими кружками в футере */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Эти три строки центрируют SVG-иконку внутри круга */
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    /* Стартовый синий цвет IRIS из Figma */
+    border-radius: 50%;
+    /* Превращает квадрат в идеальный круг */
+    /* Плавный переход цвета фона при наведении за 250 миллисекунд */
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+    background-color: #31d0aa;
+    /* Тот самый ЗЕЛЕНЫЙ ХОВЕР для футера по ТЗ */
+}
+
+.footer-socials-icon {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4fd;
+    /* Красит саму внутреннюю иконку в цвет CLOUD */
+}
