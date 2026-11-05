@@ -96,27 +96,25 @@
     /* Красит саму внутреннюю иконку в цвет CLOUD */
 }
 
+            /*домашка 5*/
 
-/* --- Контейнер футера (батьківський блок для Left, Socials, Subscribe) --- */
-.footer-container {
-display: flex;
-align-items: baseline;
-justify-content: space-between;
-/* Розподіляє 3 блоки по ширині контейнера */
-}
 /* --- Загальний контейнер підписки (Subscribe) --- */
 .subscribe {
-    /* Загальна ширина за макетом — 453px */
-width: 453px;
+margin-left: auto; /*— это заставит его прижать к правому кра*/
 }
+
+/* 💡 Добавьте этот класс, если его нет, чтобы задать точный отступ между 1-м и 2-м блоком */
+.footer-social-container {
+    margin-left: 120px;
+}
+
 /* --- Заголовок секції підписки --- */
 .subscribe-title {
   margin-bottom: 16px; /* Відступ до форми */
-  font-weight: 700;
+  font-weight: 500;/* средняя толщина */
   font-size: 16px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
   color: #ffffff; /* WHITE */
 }
 /* --- Форма (Form) --- */
@@ -137,19 +135,19 @@ width: 453px;
     background-color: transparent;
 
     /* Точні падінги : зверху/знизу 8px, зліва/справа 16px */
-        padding: 8px 16px;
+    padding: 8px 16px;
         /* Стилізація тексту за ТЗ */
-        font-size: 12px;
-        line-height: 2;
+    font-size: 12px;
+     line-height: 1.5;
         /* Ag Small Text: 12/24 */
-        letter-spacing: 0.04em;
-        color: #ffffff;
+    letter-spacing: 0.04em;
+    color: #ffffff;
         /* Плавний перехід кольору рамки (вимоги ТЗ) */     
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Колір плейсхолдера */
 .footer-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: #fff;
 }
 /* Стан FOCUS для інпута відповідно до зауважень ментора */
 .footer-input:focus {
@@ -163,7 +161,7 @@ width: 453px;
     align-items: center;
     justify-content: center;
     min-width: 165px;
-    /* Розміри зі скріншоту №5 */
+    /* Розміри */
     height: 40px;
     background-color: #4d5ae5;
     /* Фірмовий колір IRIS */
@@ -185,8 +183,7 @@ width: 453px;
 /* Стани :hover та :focus для кнопки (вимоги ТЗ) */
 .button-footer:hover,
 .button-footer:focus {
-    background-color: #404bbf;
-    /* Темніший відтінок IRIS для акценту */
+    background-color:#31d0aa;
 }
 /* --- Іконка літачка (send) --- */
 .subscribe-icon {
