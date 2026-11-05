@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <!--подключения файла modal.css-->
-    <link rel="stylesheet" href="./css/modal.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -549,7 +546,7 @@
     <!-- Backdrop — это темная вуаль на весь экран -->
 
      <!-- Початково клас is-open відсутній, щоб модалка була прихована -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open" id="modal">
       <!-- Modal — это само белое окно, которое находится внутри вуали -->
       <div class="modal">
         <!-- Сюда на следующих этапах мы добавим кнопку-крестик в верхнем правом углу -->
@@ -622,7 +619,7 @@
             </div>
              <!-- Кнопка відправки (Кнопкам «відправлення» форм заданий атрибут type="submit") -->
             <button type="submit" class="form-submit-btn">Send</button>
-            
+
           </form>
       </div>
     </div>
