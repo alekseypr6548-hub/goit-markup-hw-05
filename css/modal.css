@@ -186,6 +186,7 @@
     align-items: center;
     gap: 8px;
 }
+/* 1. Базовий стан кастомного квадратика, коли чекбокс НЕ вибрано */
 .custom-checkbox {
     width: 16px;
     height: 16px;
@@ -194,15 +195,20 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: transparent;
+
+    /* Змінюємо колір для currentColor іконки всередині */
+    color: transparent; /* Робимо галочку невидимою за замовчуванням */
+
+    /* Додаємо плавний перехід для фону, бордера та кольору іконки */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* 2. Стан, коли чекбокс ВИБРАНО (:checked) */
 .form-checkbox:checked+.checkbox-label .custom-checkbox {
     background-color: #404bbf;
     border-color: #404bbf;
-    color: #f4f4fd;
+    color: #f4f4fd;/* Тепер галочка стає видимою і набуває кольору #f4f4fd */
 }
 .privacy-link {
     color: #4d5ae5;
