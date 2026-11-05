@@ -95,3 +95,104 @@
     fill: #f4f4fd;
     /* Красит саму внутреннюю иконку в цвет CLOUD */
 }
+
+
+/* --- Контейнер футера (батьківський блок для Left, Socials, Subscribe) --- */
+.footer-container {
+display: flex;
+align-items: baseline;
+justify-content: space-between;
+/* Розподіляє 3 блоки по ширині контейнера */
+}
+/* --- Загальний контейнер підписки (Subscribe) --- */
+.subscribe {
+    /* Загальна ширина за макетом — 453px */
+width: 453px;
+}
+/* --- Заголовок секції підписки --- */
+.subscribe-title {
+  margin-bottom: 16px; /* Відступ до форми */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff; /* WHITE */
+}
+/* --- Форма (Form) --- */
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+    /* Точне значення Gap між інпутом та кнопкою зі макета (розділ Form) */
+}
+/* --- Поле введення електронної пошти (Footer input) --- */
+.footer-input {
+    width: 264px;
+    /* Точні розміри зі скріншоту №3 */
+    height: 40px;
+    border: 1px solid #ffffff;
+    /* WHITE */
+    border-radius: 4px;
+    /* Corner radius  */
+    background-color: transparent;
+
+    /* Точні падінги : зверху/знизу 8px, зліва/справа 16px */
+        padding: 8px 16px;
+        /* Стилізація тексту за ТЗ */
+        font-size: 12px;
+        line-height: 2;
+        /* Ag Small Text: 12/24 */
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        /* Плавний перехід кольору рамки (вимоги ТЗ) */     
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Колір плейсхолдера */
+.footer-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+/* Стан FOCUS для інпута відповідно до зауважень ментора */
+.footer-input:focus {
+    outline: none;
+    border-color: #31d0aa;
+    /* Колір рамки при фокусі за ТЗ */
+}
+/* --- Кнопка підписки (Button Footer) --- */
+.button-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+    /* Розміри зі скріншоту №5 */
+    height: 40px;
+    background-color: #4d5ae5;
+    /* Фірмовий колір IRIS */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+
+    /* Точні падінги : зверху/знизу 8px, зліва/справа 24px */
+    padding: 8px 24px;
+    /* Шрифт кнопки з (Ag Button Text: 16/24) */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    /* Плавний перехід фону для ефектів ховеру (вимоги ТЗ) */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Стани :hover та :focus для кнопки (вимоги ТЗ) */
+.button-footer:hover,
+.button-footer:focus {
+    background-color: #404bbf;
+    /* Темніший відтінок IRIS для акценту */
+}
+/* --- Іконка літачка (send) --- */
+.subscribe-icon {
+    margin-left: 16px;
+    /* Відступ між текстом Subscribe та іконкою літачка */
+    fill: #ffffff;
+    /* Заливка іконки білим кольором */
+    /* Розміри 24x24px беруться автоматично з атрибутів SVG width/height */
+}
