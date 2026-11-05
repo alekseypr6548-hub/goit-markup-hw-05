@@ -96,7 +96,7 @@
     /* Красит саму внутреннюю иконку в цвет CLOUD */
 }
 
-            /*домашка 5*/
+            /*---------------------домашка 5----------------*/
 
 /* --- Загальний контейнер підписки (Subscribe) --- */
 .subscribe {
@@ -110,12 +110,14 @@ margin-left: auto; /*— это заставит его прижать к пра
 
 /* --- Заголовок секції підписки --- */
 .subscribe-title {
-  margin-bottom: 16px; /* Відступ до форми */
-  font-weight: 500;/* средняя толщина */
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff; /* WHITE */
+    margin-bottom: 16px; /* Відступ до форми */
+    font-weight: 400;
+    font-size: 12px;
+
+    /* line-height: 14px; */
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #fff;
 }
 /* --- Форма (Form) --- */
 .subscribe-form {
