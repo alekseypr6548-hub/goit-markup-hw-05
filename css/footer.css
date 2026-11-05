@@ -111,13 +111,13 @@ margin-left: auto; /*— это заставит его прижать к пра
 /* --- Заголовок секції підписки --- */
 .subscribe-title {
     margin-bottom: 16px; /* Відступ до форми */
-    font-weight: 400;
-    font-size: 12px;
-
-    /* line-height: 14px; */
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: #fff;
+    font-weight: 500;
+        font-size: 16px;
+    
+        /* line-height: 24px; */
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
 }
 /* --- Форма (Form) --- */
 .subscribe-form {
@@ -140,7 +140,7 @@ margin-left: auto; /*— это заставит его прижать к пра
     padding: 8px 16px;
         /* Стилізація тексту за ТЗ */
     font-size: 12px;
-     line-height: 1.5;
+     line-height: 1.16667;
         /* Ag Small Text: 12/24 */
     letter-spacing: 0.04em;
     color: #ffffff;
